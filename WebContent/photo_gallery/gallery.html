@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Gallery City Life</title>
+
+<style type="text/css">
+body {
+	background: #222;
+	color: #eee;
+	margin-top: 20px;	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+	color: #FFF;
+}
+a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+.thumbnails img {
+	height: 80px;
+	border: 4px solid #555;
+	padding: 1px;
+	margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+	border: 4px solid #00ccff;
+	cursor:pointer;
+	text-align:center;
+}
+/*text add*/
+.imgWrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  /*remove comment if you want a gradual transition between states
+      -webkit-transition: visibility opacity 0.2s;
+      */
+}
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+  
+  /*txt add end*/
+.preview img {
+	border: 4px solid #444;
+	padding: 1px;
+	width: 800px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="gallery" align="center">
+	<h2>Gallery - City Life </h2>
+	<p>Delhi Images </p>
+
+	<br />
+
+	<div class="thumbnails">
+		<img onmouseover="preview.src=img11.src" name="img11" src="images/img11.jpg" alt="" />
+		<img onmouseover="preview.src=img22.src" name="img22" src="images/img22.jpg" alt=""/>
+		<img onmouseover="preview.src=img33.src" name="img33" src="images/img33.jpg" alt=""/>
+		<img onmouseover="preview.src=img44.src" name="img44" src="images/img44.jpg" alt=""/>
+		<img onmouseover="preview.src=img55.src" name="img55" src="images/img55.jpg" alt=""/>
+		<img onmouseover="preview.src=img66.src" name="img66" src="images/img66.jpg" alt=""/>
+		
+
+	</div><br/>
+	
+	<div class="preview" align="center">
+		<img name="preview" src="images/img11.jpg" alt=""/>
+	</div>
+
+</div>
+
+
+</body>
+</html>

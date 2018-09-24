@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+		 <class name="com.ibm.model.HibModel" table="HIBERNATE">  
+				 <id name="id">  
+				     <generator class="increment"></generator>  
+				 </id>  
+				 <property name="FirstName"></property>  
+				 <property name="password"></property>  
+				 <property name="email"></property>  
+		 		<property name="LastName"></property>
+		 		<property name="RestaurantName"></property>
+		 		<property name="NoofGuests"></property>
+		 		<property name="MobileNo"></property>
+		 		<property name="Visitingtime"></property>
+		 		 <property name="Visitingdate"></property>
+	
+		 
+		 </class>  
+</hibernate-mapping>  
